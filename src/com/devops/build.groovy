@@ -7,6 +7,6 @@ def GoBuild(buildType, buildArgs) {
     println("選擇建構類型為 ${buildType}，參數為 ${buildArgs}")
 
     BuildHome = tool buildTools[buildType]
-    sh "${BuildHome}/bin/buildType ${buildArgs}"
+    sh "${BuildHome}/bin/${buildType} ${buildArgs}"
 
 }
